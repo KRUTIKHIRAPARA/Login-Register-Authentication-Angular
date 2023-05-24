@@ -1,19 +1,46 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "userName": "krutik",
+      "password": "k12",
+      "role": "admin",
+      "isActive": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "userName": "dhruv",
+      "password": "d12",
+      "role": "accounter",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "userName": "keval",
+      "password": "keval",
+      "role": "customer",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "userName": "ankit",
+      "password": "ankit",
+      "role": "define",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "userName": "asasa",
+      "password": "asas",
+      "role": "define",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "userName": "sas",
+      "password": "asas",
+      "role": "define",
+      "isActive": true
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

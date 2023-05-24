@@ -8,17 +8,24 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 
+import { ToastrModule } from 'ngx-toastr';
+import { MatModuleModule } from './modules/mat-module/mat-module.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    ToastrModule.forRoot(),
+    MatModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
