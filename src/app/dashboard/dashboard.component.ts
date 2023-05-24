@@ -13,12 +13,12 @@ export class DashboardComponent {
   constructor(private _router: Router){}
 
   ngOnInit(): void {
-    if(this.findToken){
-      this._router.navigate(['/dashboard']);
-    }
-    else{
-      this._router.navigate(['/login']);
-    }
+    // if(this.findToken){
+    //   this._router.navigate(['/dashboard']);
+    // }
+    // else{
+    //   this._router.navigate(['/login']);
+    // }
   }
 
   logout(){

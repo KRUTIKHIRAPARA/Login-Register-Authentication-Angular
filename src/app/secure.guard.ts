@@ -13,7 +13,7 @@ export class SecureGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       
-      if(this._auth.IsloggedIn()){
+      if(localStorage.getItem('token')){
         return true;
       }
       this._router.navigate(['/login']);

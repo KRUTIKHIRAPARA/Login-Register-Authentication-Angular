@@ -30,10 +30,6 @@ export class AuthService {
   delete(body){
     return this._http.delete(`${this.urlLink}/${body.id}`);
   }
-
-  IsloggedIn(){
-    return !localStorage.getItem('token');
-  }
 }
 
 export class Users{
