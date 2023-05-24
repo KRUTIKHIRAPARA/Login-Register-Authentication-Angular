@@ -15,6 +15,8 @@ export class LoginPageComponent {
 
   allData:Array<Users> = new Array<Users>();
 
+  findToken = localStorage.getItem('token');
+
   loginForm : FormGroup;
 
   hide = true;
@@ -25,6 +27,13 @@ export class LoginPageComponent {
   ngOnInit(): void {
     this.loginFormDefine();
     this.getData();
+
+    if(this.findToken){
+      this._router.navigate(['/dashboard']);
+    }
+    else{
+      this._router.navigate(['/login']);
+    }
   }
 
   loginFormDefine(){
@@ -38,6 +47,7 @@ export class LoginPageComponent {
     this._auth.getData().subscribe({
       next:(res)=>{
         this.allData = res;
+        console.log(res);
       },
       error:(err)=>{
         console.log(err);
@@ -51,6 +61,7 @@ export class LoginPageComponent {
     
     this.allData.filter((x)=>{
       if(x.userName == username && x.password == password){
+        localStorage.setItem('token',''+ x.token +'')
         this._router.navigate(['/dashboard']);
       }
     });

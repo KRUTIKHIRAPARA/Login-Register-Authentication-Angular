@@ -41,6 +41,22 @@
       "password": "asas",
       "role": "define",
       "isActive": true
+    },
+    {
+      "id": 7,
+      "userName": "Rutvik",
+      "password": "rkhhdhs",
+      "role": "define",
+      "token": "jl4vgpAFyIgV",
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "userName": "xyz",
+      "password": "123",
+      "role": "define",
+      "token": "To8fmQW5wHqM",
+      "isActive": true
     }
   ]
 }

@@ -4,6 +4,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { SecureGuard } from './secure.guard';
+
 const routes: Routes = [
   {
     path:'',
@@ -20,7 +22,8 @@ const routes: Routes = [
   },
   {
     path:'dashboard',
-    component:DashboardComponent
+    component:DashboardComponent,
+    // canActivate:[SecureGuard]
   }
 ];
 
