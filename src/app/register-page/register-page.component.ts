@@ -60,7 +60,7 @@ export class RegisterPageComponent {
       counter += 1;
     }
     return result;
-}
+  }
 
 
   registerDetail(){
