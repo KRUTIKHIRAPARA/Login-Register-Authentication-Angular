@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent {
 
-  findToken = localStorage.getItem('token');
+  
 
   constructor(private _router: Router){}
 
@@ -21,8 +21,5 @@ export class DashboardComponent {
     // }
   }
 
-  logout(){
-    localStorage.removeItem('token');
-    this._router.navigate(['/login']);
-  }
+ 
 }

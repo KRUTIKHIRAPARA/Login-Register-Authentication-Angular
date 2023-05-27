@@ -11,13 +11,23 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { ToastrModule } from 'ngx-toastr';
 import { MatModuleModule } from './modules/mat-module/mat-module.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductsComponent } from './products/products.component';
+import { HeaderComponent } from './includes/header/header.component';
+import { SidebarComponent } from './includes/sidebar/sidebar.component';
+import { StocksComponent } from './stocks/stocks.component';
+import { SmallsidebarComponent } from './includes/smallsidebar/smallsidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     RegisterPageComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProductsComponent,
+    HeaderComponent,
+    SidebarComponent,
+    StocksComponent,
+    SmallsidebarComponent
   ],
   imports: [
     BrowserModule,

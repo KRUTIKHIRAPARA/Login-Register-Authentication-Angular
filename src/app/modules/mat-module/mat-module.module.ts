@@ -10,6 +10,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatRippleModule} from '@angular/material/core';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [],
@@ -24,7 +30,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatInputModule,
     MatButtonModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule,
+    MatRippleModule,
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSidenavModule
   ],
   exports:[
     FormsModule,
@@ -36,7 +48,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatInputModule,
     MatButtonModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule,
+    MatRippleModule,
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSidenavModule
   ]
 })
 export class MatModuleModule { }

@@ -5,6 +5,8 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { SecureGuard } from './secure.guard';
+import { ProductsComponent } from './products/products.component';
+import { StocksComponent } from './stocks/stocks.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,14 @@ const routes: Routes = [
     path:'dashboard',
     component:DashboardComponent,
     canActivate:[SecureGuard]
+  },
+  {
+    path:'products',
+    component:ProductsComponent
+  },
+  {
+    path:'stocks',
+    component:StocksComponent
   }
 ];
 

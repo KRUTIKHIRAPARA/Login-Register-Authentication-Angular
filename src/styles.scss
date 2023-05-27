@@ -9,3 +9,71 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 // regular style toast
 @import 'ngx-toastr/toastr';
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=IBM+Plex+Serif:wght@300&family=Montserrat:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$border-color : rgb(191, 191, 191);
+
+.icon-color{
+  color: rgb(79, 79, 79);
+}
+
+.main-container{
+  height: 93.2vh;
+
+  .sidebar{
+    border-right: 1px solid $border-color;
+    text-align: start;
+
+    .sidebar-outer-list{
+      
+      .sidebar-inner-list{
+        
+        button{
+          // width: 100%;
+          font-family: 'Castoro Titling', cursive;
+          font-family: 'IBM Plex Serif', serif;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+        }
+       
+      }
+    }
+  }
+
+  .small-slider{
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .addBtnPart {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    right: 0;
+    margin: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    padding: 0 !important;
+  }
+
+  .main-container{
+    height: 0 !important;
+  }
+
+  .addBtnPart {
+    bottom: 0;
+    right: 0;
+    margin: 30px !important;
+  }
+}
